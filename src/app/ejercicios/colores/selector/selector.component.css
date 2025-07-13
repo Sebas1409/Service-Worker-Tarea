@@ -1,0 +1,155 @@
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+input[type='color'] {
+  width: 50px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #388e3c;
+}
+
+.clear-btn {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clear-btn:hover {
+  background-color: #b71c1c;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin-bottom: 0.4rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+li .left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.preview {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #e53935;
+  transition: color 0.2s ease;
+}
+
+.remove-btn:hover {
+  color: #b71c1c;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+.message {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+  animation: fadein 0.3s ease-in;
+}
+
+.label {
+  font-weight: bold;
+  color: #333;
+  margin-right: 0.5rem;
+  font-size: 0.95rem;
+}
+
+input[type='color']:hover {
+  outline: 2px solid #2196f3;
+  border-radius: 4px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  li {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  li .left {
+    order: 2;
+    flex-grow: 1;
+  }
+
+  li .remove-btn {
+    order: 1;
+  }
+}

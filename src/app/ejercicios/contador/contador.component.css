@@ -1,0 +1,51 @@
+.container {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  background: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.display p {
+  font-size: 3rem;
+  margin: 1rem 0;
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+button.reset {
+  background-color: #f44336;
+}
+
+button.reset:hover {
+  background-color: #c62828;
+}

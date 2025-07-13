@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>🔢 Contador persistente</h2>
+  <p>
+    Un botón que incrementa un número cada vez que se presiona. Guarda el número
+    aunque se cierre el navegador.
+  </p>
+  <div class="display">
+    <p>{{ count }}</p>
+  </div>
+
+  <div class="actions">
+    <button (click)="incrementar()">➕ Incrementar</button>
+    <button (click)="resetear()" class="reset">🔄 Reiniciar</button>
+  </div>
+</div>

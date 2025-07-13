@@ -1,0 +1,33 @@
+<div class="container">
+  <h2>🎨 App de Colores favoritos</h2>
+  <p>
+  Permite al usuario elegir y guardar su color favorito, que cambia el fondo de la app.</p>
+  <div class="form">
+    <label for="color-picker" class="label">🎯 Selecciona un color:</label>
+    <input id="color-picker" type="color" [(ngModel)]="color" />
+    <button class="add-btn" (click)="addColor()" title="Agregar">
+      ➕ Agregar
+    </button>
+    <button class="clear-btn" (click)="clearAll()" *ngIf="colors.length">
+      🗑️ Eliminar todos
+    </button>
+  </div>
+
+  <p *ngIf="message" class="message">{{ message }}</p>
+
+  <div *ngIf="colors.length; else empty">
+    <ul>
+      <li *ngFor="let c of colors; let i = index">
+        <button class="remove-btn" (click)="removeColor(i)">❌</button>
+        <div class="left">
+          <span class="preview" [style.background]="c"></span>
+          {{ c }}
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <ng-template #empty>
+    <p class="empty">No hay colores guardados aún.</p>
+  </ng-template>
+</div>
