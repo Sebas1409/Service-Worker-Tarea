@@ -1,0 +1,70 @@
+{
+  "configVersion": 1,
+  "timestamp": 1752468722761,
+  "index": "/Service-Worker-Tarea/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/Service-Worker-Tarea/chunk-2VMXMS7J.js",
+        "/Service-Worker-Tarea/chunk-AQCXOI7G.js",
+        "/Service-Worker-Tarea/chunk-JTKUV5SM.js",
+        "/Service-Worker-Tarea/chunk-TSY2CG5I.js",
+        "/Service-Worker-Tarea/chunk-VY6VEXQ2.js",
+        "/Service-Worker-Tarea/chunk-Y2YXCNTQ.js",
+        "/Service-Worker-Tarea/index.html",
+        "/Service-Worker-Tarea/main-7ZAI7CSE.js",
+        "/Service-Worker-Tarea/polyfills-B6TNHZQ6.js",
+        "/Service-Worker-Tarea/styles-5INURTSO.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/Service-Worker-Tarea/chunk-2VMXMS7J.js": "0d4757e86a4cf693bbbe3dce3ba35dde955dfad4",
+    "/Service-Worker-Tarea/chunk-AQCXOI7G.js": "ad2de90cdeb7eaaf8f1291227e1d80821f798898",
+    "/Service-Worker-Tarea/chunk-JTKUV5SM.js": "3b223edf198b6200e1a0b8c312a42c8ea092acb7",
+    "/Service-Worker-Tarea/chunk-TSY2CG5I.js": "990cdb5032e9038bc46c9eff5d32f267a1c874d4",
+    "/Service-Worker-Tarea/chunk-VY6VEXQ2.js": "5bd5385f29de6d23575acfb2df7763dda2a88ee4",
+    "/Service-Worker-Tarea/chunk-Y2YXCNTQ.js": "88ed8d4ce8c772783801380609a3c8fd74f9f420",
+    "/Service-Worker-Tarea/index.html": "912baeb2f2c25c9abac79b72436012fc6891aaf4",
+    "/Service-Worker-Tarea/main-7ZAI7CSE.js": "d656aba5ed5a53c56aa13814945323cd02a83353",
+    "/Service-Worker-Tarea/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
+    "/Service-Worker-Tarea/styles-5INURTSO.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
