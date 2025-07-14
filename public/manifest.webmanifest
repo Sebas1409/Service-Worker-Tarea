@@ -1,8 +1,6 @@
 {
-  "name": "Ejercicios Angular",
-  "short_name": "EjerciciosPWA",
-  "theme_color": "#1976d2",
-  "background_color": "#ffffff",
+  "name": "demo",
+  "short_name": "demo",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",

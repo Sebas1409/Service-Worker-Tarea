@@ -23,9 +23,8 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "serviceWorker": true,
-              "ngswConfigPath": "ngsw-config.json",
-              "baseHref": "/Service-Worker-Tarea/"
+              "baseHref": "/Service-Worker-Tarea/",
+              "serviceWorker": "ngsw-config.json"
             }
           },
           "options": {
